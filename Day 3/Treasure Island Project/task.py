@@ -1,50 +1,52 @@
-print('''
-*******************************************************************************
-          |                   |                  |                     |
- _________|________________.=""_;=.______________|_____________________|_______
-|                   |  ,-"_,=""     `"=.|                  |
-|___________________|__"=._o`"-._        `"=.______________|___________________
-          |                `"=._o`"=._      _`"=._                     |
- _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
-|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
-|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
-          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
- _________|___________| ;`-.o`"=._; ." ` '`."\ ` . "-._ /_______________|_______
-|                   | |o ;    `"-.o`"=._``  '` " ,__.--o;   |
-|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
-____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
-/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
-____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
-____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
-/______/______/______/______/______/______/______/______/______/______/_____ /
-*******************************************************************************
-''')
-print("Welcome to Treasure Island.")
-print("Your mission is to find the treasure.")
-choice1 = input('You\'re at a crossroad, where do you want to go? '
-                'Type "left" or "right".\n').lower()
+'''
+
+88                               88
+88                               88
+88                               88
+88,dPPYba,  ,adPPYYba, ,adPPYba, 88,dPPYba,
+88P'    "8a ""     `Y8 I8[    "" 88P'    "8a
+88       d8 ,adPPPPP88  `"Y8ba,  88       88
+88b,   ,a8" 88,    ,88 aa    ]8I 88       88
+8Y"Ybbd8"'  `"8bbdP"Y8 `"YbbdP"' 88       88
+                                              '''
+
+print("Welcome to the bash!")
+choice1 = input('Would you turn "left" or "right"?').lower()
 
 if choice1 == "left":
-    choice2 = input('You\'ve come to a lake. '
-                    'There is an island in the middle of the lake. '
-                    'Type "wait" to wait for a boat. '
-                    'Type "swim" to swim across.\n').lower()
+    choice2 = input('Would you "swim" or "wait"?').lower()
     if choice2 == "wait":
-        choice3 = input("You arrive at the island unharmed. "
-                        "There is house with 3 doors. One red, "
-                        "one yellow and one blue. "
-                        "Which colour do you choose?\n").lower()
+        choice3 = input('Would you choose the "red", "yellow" or "blue" door?').lower()
         if choice3 == "red":
-            print("It's a room full of fire. Game Over")
+            print('Game Over')
         elif choice3 == "yellow":
-            print("You found the treasure. You Win!")
+            print("Treasure found. You win.")
         elif choice3 == "blue":
-            print("You enter a room of beasts. Game Over.")
+            print('You got ate by beasts.')
         else:
-            print("You chose a door that doesn't exist. Game Over.")
+            print('No door there, sorry. You lose.')
     else:
-        print("You got attacked by an angry trout. Game Over.")
+        print('Killed by angry trout. Game Over.')
+
+
+
+
 
 else:
-    print("You fell in to a hole. Game Over.")
+    print('You ded sucka!')
+    '''
+    
+       if choice3 == "blue":
+            print("You ded sucka!")
+        elif choice3 == "red":
+            print("Burned by fire - GAME OVER!")
+        else:
+            print("You WIN!")
+else:
+    print('You ded sucka!')
+    '''
+
+
+
+
+
